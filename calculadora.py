@@ -20,7 +20,7 @@ def suma():
         if numero[1] == "":
             label_result["text"] = "Los valores no pueden estar vacios!"
         else:
-            numero[2] = int(numero[0]) + int(numero[1])
+            numero[2] = float(numero[0]) + float(numero[1])
             label_result["text"] = f"El resultado de la suma es {numero[2]}" 
 def resta():
     label_result
@@ -34,7 +34,7 @@ def resta():
         if numero[1] == "":
             label_result["text"] = "Los valores no pueden estar vacios!"
         else:
-            numero[2] = int(numero[0]) - int(numero[1])
+            numero[2] = float(numero[0]) - float(numero[1])
             label_result["text"] = f"El resultado de la resta es {numero[2]}" 
 def multi():
     label_result
@@ -48,7 +48,7 @@ def multi():
         if numero[1] == "":
             label_result["text"] = "Los valores no pueden estar vacios!"
         else:
-            numero[2] = int(numero[0]) * int(numero[1])
+            numero[2] = float(numero[0]) * float(numero[1])
             label_result["text"] = f"El resultado de la multiplicacion es {numero[2]}" 
 def div():
     label_result
@@ -62,7 +62,7 @@ def div():
         if numero[1] == "":
             label_result["text"] = "Los valores no pueden estar vacios!"
         else:
-            numero[2] = int(numero[0]) / int(numero[1])
+            numero[2] = float(numero[0]) / float(numero[1])
             label_result["text"] = f"El resultado de la division es {numero[2]}"      
 def expo():
     label_result
@@ -76,7 +76,7 @@ def expo():
         if numero[1] == "":
             label_result["text"] = "Los valores no pueden estar vacios!"
         else:
-            numero[2] = int(numero[0]) ** int(numero[1])
+            numero[2] = float(numero[0]) ** float(numero[1])
             label_result["text"] = f"El resultado del exponente es {numero[2]}"      
 def modulo():
     label_result
@@ -90,7 +90,7 @@ def modulo():
         if numero[1] == "":
             label_result["text"] = "Los valores no pueden estar vacios!"
         else:
-            numero[2] = int(numero[0]) % int(numero[1])
+            numero[2] = float(numero[0]) % float(numero[1])
             label_result["text"] = f"El resultado del modulo es {numero[2]}"      
 def operacion():
     oper = combo.get()
